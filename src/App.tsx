@@ -604,21 +604,27 @@ function App() {
                 title: 'Chairman, Kimathi University',
                 contact: 'P.O.Box 11791-00100, Nairobi Kenya',
                 phone: '+254-722956929 / 0733-865154',
-                phoneHref: 'tel:+254722956929'
+                phoneHref: 'tel:+254722956929',
+                linkedin: 'https://www.linkedin.com/in/geoff-kinyaki-99657b3b2',
+                facebook: 'https://www.facebook.com/photo/?fbid=6994802820538751&set=a.796199137065848'
               },
               {
                 name: 'Edith Ndanu',
                 title: 'Account Assistant, The Good Food Company / Seven Restaurant Ltd',
                 contact: 'Nairobi, Kenya',
                 phone: '+254 723 607 980',
-                phoneHref: 'tel:+254723607980'
+                phoneHref: 'tel:+254723607980',
+                linkedin: 'https://www.linkedin.com/in/geoff-kinyaki-99657b3b2',
+                facebook: 'https://www.facebook.com/photo/?fbid=6994802820538751&set=a.796199137065848'
               },
               {
                 name: 'Samson Yamba',
                 title: 'Operations Manager, The Good Food Company / Seven Restaurants Ltd',
                 contact: 'ABC Place, Waiyaki Way, Nairobi, Kenya',
                 phone: '+254 723 692878',
-                phoneHref: 'tel:+254723692878'
+                phoneHref: 'tel:+254723692878',
+                linkedin: 'https://www.linkedin.com/in/geoff-kinyaki-99657b3b2',
+                facebook: 'https://www.facebook.com/photo/?fbid=6994802820538751&set=a.796199137065848'
               }
             ].map((referee, index) => (
               <div key={index} className="reveal-item bg-white rounded-2xl p-6 shadow-lg card-hover">
@@ -636,6 +642,26 @@ function App() {
                     <Phone size={14} className="text-[#c9a962]" />
                     {referee.phone}
                   </a>
+                  <div className="flex items-center justify-center gap-2 mt-3">
+                    <a 
+                      href={referee.linkedin} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 flex items-center justify-center rounded-full bg-[#f5f5f5] text-[#666666] hover:bg-[#0077b5] hover:text-white transition-all"
+                      title="LinkedIn"
+                    >
+                      <Linkedin size={14} />
+                    </a>
+                    <a 
+                      href={referee.facebook} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 flex items-center justify-center rounded-full bg-[#f5f5f5] text-[#666666] hover:bg-[#1877f2] hover:text-white transition-all"
+                      title="Facebook"
+                    >
+                      <Facebook size={14} />
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -691,13 +717,13 @@ function App() {
               <div className="reveal-item">
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Follow Me</h3>
                 <div className="flex gap-3">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <a href="https://www.linkedin.com/in/geoff-kinyaki-99657b3b2" target="_blank" rel="noopener noreferrer" className="social-icon">
                     <Linkedin size={18} />
                   </a>
                   <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                     <Twitter size={18} />
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <a href="https://www.facebook.com/photo/?fbid=6994802820538751&set=a.796199137065848" target="_blank" rel="noopener noreferrer" className="social-icon">
                     <Facebook size={18} />
                   </a>
                   <a href="mailto:jeffgikundi@rocketmail.com" className="social-icon">
@@ -766,13 +792,13 @@ function App() {
 
             {/* Social Icons */}
             <div className="flex gap-3 mb-6">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2d2d2d] text-[#999999] hover:bg-[#c9a962] hover:text-white transition-all">
+              <a href="https://www.linkedin.com/in/geoff-kinyaki-99657b3b2" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2d2d2d] text-[#999999] hover:bg-[#c9a962] hover:text-white transition-all">
                 <Linkedin size={18} />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2d2d2d] text-[#999999] hover:bg-[#c9a962] hover:text-white transition-all">
                 <Twitter size={18} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2d2d2d] text-[#999999] hover:bg-[#c9a962] hover:text-white transition-all">
+              <a href="https://www.facebook.com/photo/?fbid=6994802820538751&set=a.796199137065848" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2d2d2d] text-[#999999] hover:bg-[#c9a962] hover:text-white transition-all">
                 <Facebook size={18} />
               </a>
               <a href="mailto:jeffgikundi@rocketmail.com" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2d2d2d] text-[#999999] hover:bg-[#c9a962] hover:text-white transition-all">
